@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Gabarito&family=Patrick+Hand+SC&family=Pixelify+Sans&family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Pixelify Sans,'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #363062;
+    color: #F5F5F5;
+}
+
+h1{
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background:#4D4C7D;
+    display: flex;
+    align-items: center;
+    border-radius:8px;
+}
+
+form input{
+    flex:1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #F5F5F5;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+form button{
+    padding: 0 40px;
+    height: 100%;
+    background: #F99417;
+    color: #F5F5F5;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background:#FFB000;
+}
+
+::placeholder{
+    color: #F5F5F5;
+    font-size: 18px;
+}
+
+#show-more-btn{
+    background:#F99417;
+    color: #F5F5F5;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+    transition: 0.2s ease-in-out;
+}
+
+#show-more-btn:hover{
+    background: #FFB000;
+}
+
+#search-result{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#search-result img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
